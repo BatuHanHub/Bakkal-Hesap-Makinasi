@@ -1,4 +1,4 @@
-print("""proje, version 3.0 -release (x86_x64)
+print("""Bakkal Hesap Makinası, version 3.0 -release (x86_x64)
 Licence GPLv3+ : GNU GPL version 3 <https://www.gnu.org/licenses/gpl-3.0.html>
 copyright (C) 2022 BatuHanHub Software 
 
