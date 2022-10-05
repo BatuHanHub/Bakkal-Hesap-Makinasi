@@ -10,53 +10,53 @@ There is NO WARRANTY, to the extent permitted by law.""")
 
 #koli miktarı
 
-kolı=(int(input("\nKac tane koliniz var? : "))) #kullanıcıdan koli miktarını istiyor.
+Box=(int(input("\nKac tane koliniz var? : "))) #kullanıcıdan koli miktarını istiyor.
 
 #########################################################################################################
 
 #biri koli içindeki su
 
-kolı_su=(int(input("bir kolide kaç tane su var? : "))) #1 kolideki su miktarını istiyor
+BoxWater=(int(input("bir kolide kaç tane su var? : "))) #1 kolideki su miktarını istiyor
 
 #bütün kolideki su hesaplanıyor
 
-Toplam_Su = kolı * kolı_su #işlem1:toplam koli sayısı ile 1 kolide olan su miktarını çarpıyor.
-print("*toplam kolilerdeki su miktarı :",Toplam_Su)
+TotalWater = Box * BoxWater #işlem1:toplam koli sayısı ile 1 kolide olan su miktarını çarpıyor.
+print("*toplam kolilerdeki su miktarı :",TotalWater)
 
 ##########################################################################################################
 
 #alışfiyatı
 
-Alis_fiyatı=(float(input("Alısfiyatınızı giriniz: "))) #suyun alış fiyatını soruyor.
-Bir_su= Alis_fiyatı / Toplam_Su
-print("*bir suyun alısfiyatı:",Bir_su)
+PurchasePrice=(float(input("Alısfiyatınızı giriniz: "))) #suyun alış fiyatını soruyor.
+aWather= PurchasePrice / TotalWater
+print("*bir suyun alısfiyatı:",aWater)
 
 ###########################################################################################################
 
 #Kâr marjı
 
-Kar=(int(input("kâr marjınızı giriniz: "))) #sudan kazanılan parayı soruyor
+Gain=(int(input("kâr marjınızı giriniz: "))) #sudan kazanılan parayı soruyor
 
 ###########################################################################################################
 
 #suyun toplam satış fiyatı
 print("\n SONUCLAR")
 
-Toplam = Bir_su + Kar
+Total = aWater + Gain
 
-print("\nsatıs fiyatınız: ", Toplam)
+print("\nsatıs fiyatınız: ", Total)
 
 #toplam kolilerdeki su fiyatı
 
-ıslem2 = Toplam * Toplam_Su
+Process1 = Total * TotalWater
 
-print("Toplam kolideki su fiyatınız: ", ıslem2)
+print("Toplam kolideki su fiyatınız: ", Process1)
 
 #toplam su fiyatı ile Kâr hesaplanıyor
 
-TopKar = Toplam_Su * Kar
+TotalGain = TotalWater * Gain
 
-print("toplam sudan kazandıgınız kâr: ", TopKar)
+print("toplam sudan kazandıgınız kâr: ", TotalGain)
 
 ############################################################################################################
 
