@@ -28,8 +28,8 @@ print("*toplam kolilerdeki su miktarı :",TotalWater)
 #alışfiyatı
 
 PurchasePrice=(float(input("Alısfiyatınızı giriniz: "))) #suyun alış fiyatını soruyor.
-aWater = PurchasePrice / TotalWater
-print("*bir suyun alısfiyatı:",aWater)
+Water = PurchasePrice / TotalWater
+print("*bir suyun alısfiyatı:", Water)
 
 ###########################################################################################################
 
@@ -42,7 +42,7 @@ Gain=(float(input("kâr marjınızı giriniz: "))) #sudan kazanılan parayı sor
 #suyun toplam satış fiyatı
 print("\n SONUCLAR")
 
-Total = aWater + Gain
+Total = Water + Gain
 
 print("\nsatıs fiyatınız: ", Total)
 
