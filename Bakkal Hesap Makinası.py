@@ -48,9 +48,9 @@ print("\nsatıs fiyatınız: ", Toplam)
 
 #toplam kolilerdeki su fiyatı
 
-işlem2 = Toplam * Toplam_Su
+islem2 = Toplam * Toplam_Su
 
-print("Toplam kolideki su fiyatınız: ", işlem2)
+print("Toplam kolideki su fiyatınız: ", islem2)
 
 #toplam su fiyatı ile Kâr hesaplanıyor
 
