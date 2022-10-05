@@ -35,7 +35,7 @@ print("*bir suyun alısfiyatı:",aWater)
 
 #Kâr marjı
 
-Gain=(int(input("kâr marjınızı giriniz: "))) #sudan kazanılan parayı soruyor
+Gain=(float(input("kâr marjınızı giriniz: "))) #sudan kazanılan parayı soruyor
 
 ###########################################################################################################
 
