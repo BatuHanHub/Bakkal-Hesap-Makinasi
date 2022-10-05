@@ -35,14 +35,14 @@ print("*bir suyun alısfiyatı:",Bir_su)
 
 #Kâr marjı
 
-Kâr=(int(input("kâr marjınızı giriniz: "))) #sudan kazanılan parayı soruyor
+Kar=(int(input("kâr marjınızı giriniz: "))) #sudan kazanılan parayı soruyor
 
 ###########################################################################################################
 
 #suyun toplam satış fiyatı
 print("\n SONUCLAR")
 
-Toplam = Bir_su + Kâr
+Toplam = Bir_su + Kar
 
 print("\nsatıs fiyatınız: ", Toplam)
 
@@ -54,9 +54,9 @@ print("Toplam kolideki su fiyatınız: ", işlem2)
 
 #toplam su fiyatı ile Kâr hesaplanıyor
 
-TopKâr = Toplam_Su * Kâr
+TopKar = Toplam_Su * Kar
 
-print("toplam sudan kazandıgınız kâr: ", TopKâr)
+print("toplam sudan kazandıgınız kâr: ", TopKar)
 
 ############################################################################################################
 
