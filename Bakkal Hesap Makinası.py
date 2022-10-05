@@ -10,13 +10,13 @@ There is NO WARRANTY, to the extent permitted by law.""")
 
 #koli miktarı
 
-Box=(int(input("\nKac tane koliniz var? : "))) #kullanıcıdan koli miktarını istiyor.
+Box = int(input("\nKac tane koliniz var? : ")) #kullanıcıdan koli miktarını istiyor.
 
 #########################################################################################################
 
 #biri koli içindeki su
 
-BoxWater=(int(input("bir kolide kaç tane su var? : "))) #1 kolideki su miktarını istiyor
+BoxWater = int(input("bir kolide kaç tane su var? : ")) #1 kolideki su miktarını istiyor
 
 #bütün kolideki su hesaplanıyor
 
@@ -27,7 +27,7 @@ print("*toplam kolilerdeki su miktarı :",TotalWater)
 
 #alışfiyatı
 
-PurchasePrice=(float(input("Alısfiyatınızı giriniz: "))) #suyun alış fiyatını soruyor.
+PurchasePrice = float(input("Alısfiyatınızı giriniz: ")) #suyun alış fiyatını soruyor.
 Water = PurchasePrice / TotalWater
 print("*bir suyun alısfiyatı:", Water)
 
@@ -35,7 +35,7 @@ print("*bir suyun alısfiyatı:", Water)
 
 #Kâr marjı
 
-Gain=(float(input("kâr marjınızı giriniz: "))) #sudan kazanılan parayı soruyor
+Gain = float(input("kâr marjınızı giriniz: ")) #sudan kazanılan parayı soruyor
 
 ###########################################################################################################
 
