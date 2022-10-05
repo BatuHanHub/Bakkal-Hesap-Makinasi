@@ -28,7 +28,7 @@ print("*toplam kolilerdeki su miktarı :",Toplam_Su)
 #alışfiyatı
 
 Alis_fiyatı=(float(input("Alısfiyatınızı giriniz: "))) #suyun alış fiyatını soruyor.
-Bir_su= Alış_fiyatı / Toplam_Su
+Bir_su= Alis_fiyatı / Toplam_Su
 print("*bir suyun alısfiyatı:",Bir_su)
 
 ###########################################################################################################
