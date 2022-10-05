@@ -10,17 +10,17 @@ There is NO WARRANTY, to the extent permitted by law.""")
 
 #koli miktarı
 
-koli=(int(input("\nKac tane koliniz var? : "))) #kullanıcıdan koli miktarını istiyor.
+kolı=(int(input("\nKac tane koliniz var? : "))) #kullanıcıdan koli miktarını istiyor.
 
 #########################################################################################################
 
 #biri koli içindeki su
 
-koli_su=(int(input("bir kolide kaç tane su var? : "))) #1 kolideki su miktarını istiyor
+kolı_su=(int(input("bir kolide kaç tane su var? : "))) #1 kolideki su miktarını istiyor
 
 #bütün kolideki su hesaplanıyor
 
-Toplam_Su = koli * koli_su #işlem1:toplam koli sayısı ile 1 kolide olan su miktarını çarpıyor.
+Toplam_Su = kolı * kolı_su #işlem1:toplam koli sayısı ile 1 kolide olan su miktarını çarpıyor.
 print("*toplam kolilerdeki su miktarı :",Toplam_Su)
 
 ##########################################################################################################
@@ -48,9 +48,9 @@ print("\nsatıs fiyatınız: ", Toplam)
 
 #toplam kolilerdeki su fiyatı
 
-islem2 = Toplam * Toplam_Su
+ıslem2 = Toplam * Toplam_Su
 
-print("Toplam kolideki su fiyatınız: ", islem2)
+print("Toplam kolideki su fiyatınız: ", ıslem2)
 
 #toplam su fiyatı ile Kâr hesaplanıyor
 
