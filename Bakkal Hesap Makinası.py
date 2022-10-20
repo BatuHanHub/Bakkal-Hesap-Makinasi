@@ -6,7 +6,7 @@ print ( """
  | |__| | |    | |____   ___) |  _  | |_| |
   \_____|_|    |______| |____/  (_)  \___/                                                 
        
-Not Ortalaması Hesap Programı, sürüm 1.0 -sürüm (x86_x64)
+Bakkal Hesap Makinası, sürüm 2.5 -sürüm (x86_x64)
 Lisans GPLv3+ : GNU GPL sürüm 3 <https://www.gnu.org/licenses/gpl-3.0.html>
 telif hakkı (C) 2022 BatuHanHub 
 
