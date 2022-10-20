@@ -1,9 +1,17 @@
-print("""Bakkal Hesap Makinası, version 3.0 -release (x86_x64)
-Licence GPLv3+ : GNU GPL version 3 <https://www.gnu.org/licenses/gpl-3.0.html>
-copyright (C) 2022 BatuHanHub Software 
+print ( """
+   _____ _____  _        ____         ___  
+  / ____|  __ \| |      |___ \       / _ \ 
+ | |  __| |__) | |        __) |     | | | |
+ | | |_ |  ___/| |       |__ <      | | | |
+ | |__| | |    | |____   ___) |  _  | |_| |
+  \_____|_|    |______| |____/  (_)  \___/                                                 
+       
+Not Ortalaması Hesap Programı, sürüm 1.0 -sürüm (x86_x64)
+Lisans GPLv3+ : GNU GPL sürüm 3 <https://www.gnu.org/licenses/gpl-3.0.html>
+telif hakkı (C) 2022 BatuHanHub 
 
-This is free software; you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law.""")
+Bu ücretsiz bir yazılımdır; değiştirmekte ve yeniden dağıtmakta özgürsünüz.
+Yasaların izin verdiği ölçüde HİÇBİR GARANTİ YOKTUR.\n""" )
 
 while True:
 
