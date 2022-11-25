@@ -6,99 +6,91 @@ print ( """
  | |__| | |    | |____   ___) |  _  | |_| |
   \_____|_|    |______| |____/  (_)  \___/                                                 
        
-Bakkal Hesap Makinası, sürüm 2.5 -sürüm (x86_x64)
+Bakkal Hesap Makinası, sürüm 3.0 -sürüm (x86_x64)
 Lisans GPLv3+ : GNU GPL sürüm 3 <https://www.gnu.org/licenses/gpl-3.0.html>
 telif hakkı (C) 2022 BatuHanHub 
 
 Bu ücretsiz bir yazılımdır; değiştirmekte ve yeniden dağıtmakta özgürsünüz.
 Yasaların izin verdiği ölçüde HİÇBİR GARANTİ YOKTUR.\n""" )
 
+#ürün adı
+urun = str(input("Sattığınız ürünün adı nedir?:"))
+
 while True:
-
-##########################################################################################################
-
-#koli miktarı
-
- Box = int(input("\nKac tane koliniz var? : ")) #kullanıcıdan koli miktarını istiyor.
  
- if Box > 0:
+ #kutu miktarı
+
+ Kutu = int(input(f"\nKac tane {urun} kutusu var? : ")) #kullanıcıdan kutu miktarını istiyor.
+ 
+ if Kutu > 0:
    pass
    
- elif Box < 0:
+ elif Kutu < 0:
    print("\nhatalı sayı gidiniz lütfen düzeltiniz\n")  
    continue 
 
-#########################################################################################################
+#biri koli içindeki ürün
 
-#biri koli içindeki su
-
- BoxWater = int(input("bir kolide kaç tane su var? : ")) #1 kolideki su miktarını istiyor
+ KutuUrun = int(input(f"bir {urun} kutusunda kaç tane {urun} var? : ")) #1 kolideki ürün miktarını istiyor
  
- if BoxWater > 0:
+ if KutuUrun > 0:
    pass
    
- elif BoxWater < 0:
+ elif KutuUrun < 0:
    print("\nhatalı sayı gidiniz lütfen düzeltiniz\n")
    continue
 
 #bütün kolideki su hesaplanıyor
 
- TotalWater = Box * BoxWater #işlem1:toplam koli sayısı ile 1 kolide olan su miktarını çarpıyor.
- print("*toplam kolilerdeki su miktarı :",TotalWater)
-
-##########################################################################################################
+ ToplamUrun = Kutu * KutuUrun #işlem1:toplam koli sayısı ile 1 kolide olan su miktarını çarpıyor.
+ print(f"*toplam kutulardaki {urun} miktarı :{ToplamUrun}")
 
 #alışfiyatı
 
- PurchasePrice = float(input("Alısfiyatınızı giriniz: ")) #suyun alış fiyatını soruyor.
+ AlısFiyati = float(input("Alısfiyatınızı giriniz: ")) #suyun alış fiyatını soruyor.
  
- if PurchasePrice > 0:
+ if AlısFiyati > 0:
    pass
    
- elif PurchasePrice < 0:
+ elif AlısFiyati < 0:
    print("\nhatalı sayı gidiniz lütfen düzeltiniz örneğin x.y yapınız\n")   
    continue
 
- Water = PurchasePrice / TotalWater
- print("*bir suyun alısfiyatı:", Water)
-
-###########################################################################################################
+ UrunAlıs = AlısFiyati / ToplamUrun
+ print(f"*bir {urun} alısfiyatı:{UrunAlıs}")
 
 #Kâr marjı
 
- Gain = float(input("kâr marjınızı giriniz: ")) #sudan kazanılan parayı soruyor
+ Kar = float(input("kâr marjınızı giriniz: ")) #sudan kazanılan parayı soruyor
 
- if Gain > 0:
+ if Kar > 0:
    pass
    
- elif Gain < 0:
+ elif Kar < 0:
    print("\nhatalı sayı gidiniz lütfen düzeltiniz x.y yapınız\n")
    continue
-
-###########################################################################################################
  
-#suyun toplam satış fiyatı
+#ürünün toplam satış fiyatı
  print("\n SONUCLAR")
 
- Total = Water + Gain
+ Toplam = UrunAlıs + Kar
 
- print("\nsatıs fiyatınız: ", Total)
+ print(f"\nsatıs fiyatınız: {Toplam}")
 
-#toplam kolilerdeki su fiyatı
+#toplam kutulardaki ürün fiyatı
 
- Process1 = Total * TotalWater
+ Islem1 = Toplam * ToplamUrun
 
- print("Toplam kolideki su fiyatınız: ", Process1)
+ print(f"Toplam kolideki su fiyatınız: {Islem1}")
 
-#toplam su fiyatı ile Kâr hesaplanıyor
+#toplam ürün fiyatı ile Kâr hesaplanıyor
 
- TotalGain = TotalWater * Gain
+ ToplamKar = ToplamUrun * Kar
 
- print("toplam sudan kazandıgınız kâr: ", TotalGain)
-
-
-############################################################################################################
+ print(f"toplam {urun} kazandıgınız kâr: {ToplamKar}")
+ 
+ break
 
 print("\ndiğer projelerim için: <https://github.com/BatuHanHub>")
 
-input("\nbir tusa basarak pencereyi kapatabilirsiniz...") #ekranın hemen kapanmasını engelliyor.
+input("\nbir tusa basarak pencereyi kapatabilirsiniz...")
