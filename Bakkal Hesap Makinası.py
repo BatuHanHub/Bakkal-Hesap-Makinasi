@@ -6,7 +6,7 @@ print ( """
  | |__| | |    | |____   ___) |  _  | |_| |
   \_____|_|    |______| |____/  (_)  \___/                                                 
        
-Bakkal Hesap Makinası, sürüm 3.0 -sürüm (x86_x64)
+Bakkal Hesap Makinası, sürüm 3.2 -sürüm (x86_x64)
 Lisans GPLv3+ : GNU GPL sürüm 3 <https://www.gnu.org/licenses/gpl-3.0.html>
 telif hakkı (C) 2022 BatuHanHub 
 
@@ -47,17 +47,17 @@ while True:
 
 #alışfiyatı
 
- AlısFiyati = float(input("Alısfiyatınızı giriniz: ")) #suyun alış fiyatını soruyor.
+ AlisFiyati = float(input("Alısfiyatınızı giriniz: ")) #suyun alış fiyatını soruyor.
  
- if AlısFiyati > 0:
+ if AlisFiyati > 0:
    pass
    
- elif AlısFiyati < 0:
+ elif AlisFiyati < 0:
    print("\nhatalı sayı gidiniz lütfen düzeltiniz örneğin x.y yapınız\n")   
    continue
 
- UrunAlıs = AlısFiyati / ToplamUrun
- print(f"*bir {urun} alısfiyatı:{UrunAlıs}")
+ UrunAlis = AlisFiyati / ToplamUrun
+ print(f"*bir {urun} alısfiyatı:{UrunAlis}")
 
 #Kâr marjı
 
@@ -73,7 +73,7 @@ while True:
 #ürünün toplam satış fiyatı
  print("\n SONUCLAR")
 
- Toplam = UrunAlıs + Kar
+ Toplam = UrunAlis + Kar
 
  print(f"\nsatıs fiyatınız: {Toplam}")
 
